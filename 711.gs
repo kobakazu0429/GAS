@@ -13,7 +13,7 @@ var SEVEN_COLOR = [
 
 var CHANNEL = DEBUG_MODE ? 'C989JV2NN' : 'CAQK8AFLZ';
 var USERNAME = 'コンビニマスター';
-var ICON = ':711:';
+var ICON_URL = 'https://emoji.slack-edge.com/T84UUNQBY/711/86287812a1ababd1.png';
 
 
 function main() {
@@ -68,7 +68,7 @@ function sendSlack(attachments) {
   var data = {
     'channel': CHANNEL,
     'username': USERNAME,
-    'icon_emoji': ICON,
+    'icon_url': ICON_URL,
     'text': '今週の新商品です',
     'attachments': attachments,
   };
