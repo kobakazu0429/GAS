@@ -19,7 +19,7 @@ var ICON_URL = 'https://emoji.slack-edge.com/T84UUNQBY/711/86287812a1ababd1.png'
 function main() {
     var attachments = []
 
-    var html = UrlFetchApp.fetch(URL).getContentText()
+    var html = UrlFetchApp.fetch(THISWEEK_CHUGOKU).getContentText()
 
     var items = Parser.data(html).from('<li class="item">').to('</div>\n</li>').iterate()
 
