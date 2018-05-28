@@ -30,6 +30,7 @@ function doPost(e) {
   text_tmp += '問題がある場合は(https://docs.google.com/spreadsheets/d/1HcylSzjbZoi_-U5usDCghzhjwG95iRCFHtUBsNO3fPY)より修正してください。';
 
   var response = {
+    response_type: "in_channel",
     text: text_tmp
   };
 
